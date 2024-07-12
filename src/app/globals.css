@@ -16,6 +16,12 @@
   }
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -30,4 +36,19 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  width: 90px !important;
+  height: 10px !important;
+  left: 43% !important;
+}
+
+.swiper-scrollbar {
+  background: #333333 !important;
+}
+
+.swiper-scrollbar-drag {
+  background: #e50000 !important;
 }
