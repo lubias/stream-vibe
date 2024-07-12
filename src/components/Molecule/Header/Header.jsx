@@ -25,7 +25,7 @@ function Header() {
                 <img src='icons/search.svg' />
                 <img src='icons/bell.svg' />
             </div>
-            <div className="hidden lg_4:block">
+            <div className="hidden lg_4:block h-full">
                 <div className='relative mt-10'>
                     <button onClick={toggleMenu} className="text-white">
                         <img src='icons/menu.svg' />

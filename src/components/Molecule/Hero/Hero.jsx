@@ -4,8 +4,8 @@ import React from 'react'
 function Hero() {
     return (
         <div>
-            <div className='flex justify-center mt-12 mb-14'>
-                <img src='images/logo_hero.svg' className='w-96 lg_2:w-80' />
+            <div className='flex justify-center mt-12 mb-14 lg_4:mt-7 lg_4:mb-7'>
+                <img src='images/logo_hero.svg' className='w-96 lg_2:w-80 lg_4:w-40' />
             </div>
             <div className='flex flex-col items-center px-96 lg_2:px-60 lg_3:px-40 md_2:px-5'>
                 <h1 className='text-4xl lg_2:text-3xl mb-4 font-bold text-center'>The Best Streaming Experience</h1>
