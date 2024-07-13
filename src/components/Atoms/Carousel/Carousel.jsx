@@ -60,7 +60,7 @@ function Carousel({ cards, title, description }) {
                         {cards.map((card, index) => (
                             <div
                                 key={index}
-                                className={`h-1 w-4 rounded-full bg-gray-300 ${index === currentIndex ? 'bg-red-45 w-6 h-2' : ''}`}
+                                className={`h-1 w-4 rounded-full bg-gray-300 ${index === currentIndex ? 'bg-red-45 w-6' : ''}`}
                             />
                         ))}
                     </di>
@@ -85,23 +85,23 @@ function Carousel({ cards, title, description }) {
                 <div className='flex items-center gap-4 bg-black-06 border-black-20 p-4 rounded-lg'>
                     <button
                         onClick={goToPrevious}
-                        className="bg-black-10 rounded-lg w-12 h-12 flex justify-center items-center"
+                        className="bg-black-10 rounded-lg w-12 h-12 sm_1:w-10 sm_1:h-10 flex justify-center items-center"
                     >
-                        <img src='/icons/arrowLeft.svg' alt='' className='w-6 h-6' />
+                        <img src='/icons/arrowLeft.svg' alt='' className='w-6 h-6 sm_1:w-5 sm_1:h-5' />
                     </button>
-                    <di className="flex gap-2 sm_1:hidden">
+                    <di className="flex gap-2">
                         {cards && cards.map((card, index) => (
                             <div
                                 key={index}
-                                className={`h-1 w-4 rounded-full bg-gray-300 ${index === currentIndex ? 'bg-red-45 w-6 h-2' : ''}`}
+                                className={`h-1 w-4 rounded-full bg-gray-300 ${index === currentIndex ? 'bg-red-45 w-6' : ''}`}
                             />
                         ))}
                     </di>
                     <button
                         onClick={goToNext}
-                        className="bg-black-10 rounded-lg w-12 h-12 flex justify-center items-center"
+                        className="bg-black-10 rounded-lg w-12 h-12 sm_1:w-10 sm_1:h-10 flex justify-center items-center"
                     >
-                        <img src='/icons/arrowRight.svg' alt='' className='w-6 h-6' />
+                        <img src='/icons/arrowRight.svg' alt='' className='w-6 h-6 sm_1:w-5 sm_1:h-5' />
                     </button>
                 </div>
             </div>
