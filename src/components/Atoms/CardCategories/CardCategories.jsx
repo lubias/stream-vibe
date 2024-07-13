@@ -6,7 +6,7 @@ function CardCategories({ image, genre }) {
             <img src={image} className='md_1:w-full' />
             <div className='w-full flex justify-between mt-3'>
                 <p>{genre}</p>
-                <img src="icons/arrow.svg" />
+                <img src="icons/arrowRight.svg" />
             </div>
         </div>
     )

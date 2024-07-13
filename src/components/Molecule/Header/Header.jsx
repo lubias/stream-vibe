@@ -2,12 +2,15 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 
-function Header() {
+function Header({ page }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
-        console.log("teste");
+    };
+
+    const isActive = (pathname) => {
+        return page === pathname;
     };
 
     return (
@@ -15,10 +18,10 @@ function Header() {
             <img src='images/logo.svg' />
             <div className='lg_4:hidden'>
                 <nav className='flex gap-6 items-center bg-black-06 border-4 rounded-md border-black-12 py-2 px-4'>
-                    <Link href="#" className='bg-black-12 py-3 px-6 rounded-md'>Home</Link>
-                    <Link href="#">Movies&Shows</Link>
-                    <Link href="#">Support</Link>
-                    <Link href="#">Subscriptions</Link>
+                    <Link href="/home" className={`${isActive('home') ? 'bg-black-12 py-3 px-6 rounded-md' : ''}`}>Home</Link>
+                    <Link href="/movies-shows" className={`${isActive('movies') ? 'bg-black-12 py-3 px-6 rounded-md' : ''}`}>Movies & Shows</Link>
+                    <Link href="/support" className={`${isActive('support') ? 'bg-black-12 py-3 px-6 rounded-md' : ''}`}>Support</Link>
+                    <Link href="/subscriptions" className={`${isActive('subscriptions') ? 'bg-black-12 py-3 px-6 rounded-md' : ''}`}>Subscriptions</Link>
                 </nav>
             </div>
             <div className='flex gap-8 lg_4:hidden'>
@@ -32,10 +35,10 @@ function Header() {
                     </button>
                     {isOpen && (
                         <nav className='absolute top-12 right-0 mt-2 bg-black-12 shadow-lg py-2 text-nowrap rounded-md flex flex-col'>
-                            <Link href="#" className='py-2 px-4 hover:bg-gray-200'>Home</Link>
-                            <Link href="#" className='py-2 px-4 hover:bg-gray-200'>Movies & Shows</Link>
-                            <Link href="#" className='py-2 px-4 hover:bg-gray-200'>Support</Link>
-                            <Link href="#" className='py-2 px-4 hover:bg-gray-200'>Subscriptions</Link>
+                            <Link href="/home" className={`py-2 px-4 ${isActive('/') ? 'bg-black-12' : ''}`}>Home</Link>
+                            <Link href="/movies-shows" className={`py-2 px-4 ${isActive('/movies') ? 'bg-black-12' : ''}`}>Movies & Shows</Link>
+                            <Link href="/support" className={`py-2 px-4 ${isActive('/support') ? 'bg-black-12' : ''}`}>Support</Link>
+                            <Link href="/subscriptions" className={`py-2 px-4 ${isActive('/subscriptions') ? 'bg-black-12' : ''}`}>Subscriptions</Link>
                         </nav>
                     )}
                 </div>

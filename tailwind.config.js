@@ -23,7 +23,8 @@ module.exports = {
       borderColor: {
         "black-12": "#1F1F1F",
         "red-45": "#e500004f",
-        "black-15": "#262626"
+        "black-15": "#262626",
+        "black-20": "#333333"
       },
       padding: {
         "160": "160px"
