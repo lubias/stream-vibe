@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CardCategories from '../CardCategories/CardCategories';
 
-function Carousel({ cards, title, description }) {
+function CarouselCategories({ cards, title, description = "", type = 1 }) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [visibleCards, setVisibleCards] = useState(5);
 
@@ -9,9 +9,17 @@ function Carousel({ cards, title, description }) {
         const updateVisibleCards = () => {
             const width = window.innerWidth;
             if (width > 1015) {
-                setVisibleCards(5);
+                if (cards.length > 5) {
+                    setVisibleCards(5);
+                } else {
+                    setVisibleCards(cards.length);
+                }
             } else if (width > 768) {
-                setVisibleCards(3);
+                if (cards.length > 3) {
+                    setVisibleCards(3);
+                } else {
+                    setVisibleCards(cards.length);
+                }
             } else {
                 setVisibleCards(1);
             }
@@ -43,10 +51,10 @@ function Carousel({ cards, title, description }) {
     };
 
     return (
-        <div className='flex flex-col mt-40'>
+        <div className='flex flex-col'>
             <div className='flex items-center justify-between gap-10 mb-10'>
                 <div className=''>
-                    <h1 className='text-2xl font-bold'>{title}</h1>
+                    <h1 className='text-4xl md_3:text-2xl font-bold'>{title}</h1>
                     <p className='text-xl'>{description}</p>
                 </div>
                 <div className='flex lg_3:hidden items-center gap-4 bg-black-06 border-black-20 p-4 rounded-lg'>
@@ -76,7 +84,7 @@ function Carousel({ cards, title, description }) {
                 <div className="grid gap-7 overflow-hidden rounded-lg shadow-lg transition-transform duration-500 ease-in-out" style={{ gridTemplateColumns: `repeat(${visibleCards}, minmax(0, 1fr))` }}>
                     {getVisibleCards().map((card, index) => (
                         <div key={index} className="col-span-1">
-                            <CardCategories image={card.image} genre={card.genre} />
+                            <CardCategories image={card.image} genre={card.genre} type={type} />
                         </div>
                     ))}
                 </div>
@@ -85,23 +93,23 @@ function Carousel({ cards, title, description }) {
                 <div className='flex items-center gap-4 bg-black-06 border-black-20 p-4 rounded-lg'>
                     <button
                         onClick={goToPrevious}
-                        className="bg-black-10 rounded-lg w-12 h-12 sm_1:w-10 sm_1:h-10 flex justify-center items-center"
+                        className="bg-black-10 rounded-lg w-12 h-12 md_2:w-10 md_2:h-10 flex justify-center items-center"
                     >
-                        <img src='/icons/arrowLeft.svg' alt='' className='w-6 h-6 sm_1:w-5 sm_1:h-5' />
+                        <img src='/icons/arrowLeft.svg' alt='' className='w-6 h-6 md_2:w-5 md_2:h-5' />
                     </button>
                     <di className="flex gap-2">
                         {cards && cards.map((card, index) => (
                             <div
                                 key={index}
-                                className={`h-1 w-4 rounded-full bg-gray-300 ${index === currentIndex ? 'bg-red-45 w-6' : ''}`}
+                                className={`h-1 w-4 md_2:w-2 rounded-full bg-gray-300 ${index === currentIndex ? 'bg-red-45 w-6' : ''}`}
                             />
                         ))}
                     </di>
                     <button
                         onClick={goToNext}
-                        className="bg-black-10 rounded-lg w-12 h-12 sm_1:w-10 sm_1:h-10 flex justify-center items-center"
+                        className="bg-black-10 rounded-lg w-12 h-12 md_2:w-10 md_2:h-10 flex justify-center items-center"
                     >
-                        <img src='/icons/arrowRight.svg' alt='' className='w-6 h-6 sm_1:w-5 sm_1:h-5' />
+                        <img src='/icons/arrowRight.svg' alt='' className='w-6 h-6 md_2:w-5 md_2:h-5' />
                     </button>
                 </div>
             </div>
@@ -109,4 +117,4 @@ function Carousel({ cards, title, description }) {
     );
 };
 
-export default Carousel
+export default CarouselCategories
