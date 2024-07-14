@@ -4,11 +4,11 @@ import React from 'react'
 
 function Categories() {
     const cards = [
-        { image: 'images/cards/action.png', genre: 'Action' },
-        { image: 'images/cards/adventure.png', genre: 'Adventure' },
-        { image: 'images/cards/comedy.png', genre: 'Comedy' },
-        { image: 'images/cards/drama.png', genre: 'Drama' },
-        { image: 'images/cards/horror.png', genre: 'Horror' },
+        { image: 'images/cards/genres/action.png', genre: 'Action' },
+        { image: 'images/cards/genres/adventure.png', genre: 'Adventure' },
+        { image: 'images/cards/genres/comedy.png', genre: 'Comedy' },
+        { image: 'images/cards/genres/drama.png', genre: 'Drama' },
+        { image: 'images/cards/genres/horror.png', genre: 'Horror' },
     ];
 
     return (
