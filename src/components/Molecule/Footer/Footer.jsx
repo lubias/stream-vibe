@@ -38,9 +38,9 @@ function Footer() {
                 <div>
                     <p className='mb-5'>Connect With Us</p>
                     <div className='flex gap-2'>
-                        <img src='icons/facebook.svg' className='sm_1:w-10' />
-                        <img src='icons/twitter.svg' className='sm_1:w-10' />
-                        <img src='icons/linkedin.svg' className='sm_1:w-10' />
+                        <img src='/icons/facebook.svg' className='sm_1:w-10' />
+                        <img src='/icons/twitter.svg' className='sm_1:w-10' />
+                        <img src='/icons/linkedin.svg' className='sm_1:w-10' />
                     </div>
                 </div>
             </div>
@@ -49,9 +49,9 @@ function Footer() {
                 <p className='text-sm md_2:text-center'>@2023 streamvib, All Rights Reserved</p>
                 <div className='flex gap-5 items-center md_2:grid md_2:grid-cols-1 md_2:text-center'>
                     <Link href="#" className='text-sm'>Termos of Use</Link>
-                    <img src='images/hr_vertical.svg' className='md_2:hidden' />
+                    <img src='/images/hr_vertical.svg' className='md_2:hidden' />
                     <Link href="#" className='text-sm'>Privacy Policy</Link>
-                    <img src='images/hr_vertical.svg' className='md_2:hidden' />
+                    <img src='/images/hr_vertical.svg' className='md_2:hidden' />
                     <Link href="#" className='text-sm'>Cookie Policy</Link>
                 </div>
             </div>
