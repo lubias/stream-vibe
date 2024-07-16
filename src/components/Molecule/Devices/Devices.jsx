@@ -3,12 +3,12 @@ import React from 'react'
 
 function Devices() {
     const devices = [
-        { "name": "Smartphone", "description": "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store", "image": "icons/smartphone.svg" },
-        { "name": "Tablet", "description": "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store", "image": "icons/tablet.svg" },
-        { "name": "SmartTV", "description": "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store", "image": "icons/smartTv.svg" },
-        { "name": "Laptops", "description": "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store", "image": "icons/laptops.svg" },
-        { "name": "Gaming Consoles", "description": "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store", "image": "icons/console.svg" },
-        { "name": "VR Headsets ", "description": "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store", "image": "icons/vr.svg" },
+        { "name": "Smartphone", "description": "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store", "image": "/icons/smartphone.svg" },
+        { "name": "Tablet", "description": "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store", "image": "/icons/tablet.svg" },
+        { "name": "SmartTV", "description": "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store", "image": "/icons/smartTv.svg" },
+        { "name": "Laptops", "description": "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store", "image": "/icons/laptops.svg" },
+        { "name": "Gaming Consoles", "description": "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store", "image": "/icons/console.svg" },
+        { "name": "VR Headsets ", "description": "StreamVibe is optimized for both Android and iOS smartphones. Download our app from the Google Play Store or the Apple App Store", "image": "/icons/vr.svg" },
     ];
 
     return (

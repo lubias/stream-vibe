@@ -11,7 +11,7 @@ function CardEpisode({ number, title, image, duration, description }) {
                         <img src='/icons/clock.svg' className='w-6 h-6' />
                         <p className='text-base text-gray-60'>{duration}</p>
                     </div>
-                    <div className='flex flex-col justify-around'>
+                    <div className='flex flex-col justify-around w-full'>
                         <div className='flex items-center justify-between w-full'>
                             <h3 className='text-xl font-semibold'>{title}</h3>
                             <div className='w-28 text-nowrap bg-black-08 flex items-center justify-center gap-1 px-2 py-1 rounded-lg lg_2:hidden'>
