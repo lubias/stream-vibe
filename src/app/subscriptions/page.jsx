@@ -1,3 +1,4 @@
+import ScrollToTopButton from '@/components/Atoms/ScrollToTopButton/ScrollToTopButton'
 import Footer from '@/components/Molecule/Footer/Footer'
 import Header from '@/components/Molecule/Header/Header'
 import SubscriptionsContent from '@/components/Organism/SubscriptionsContent/SubscriptionsContent'
@@ -9,6 +10,7 @@ function page() {
             <Header page="subscriptions" />
             <SubscriptionsContent />
             <Footer />
+            <ScrollToTopButton />
         </div>
     )
 }
