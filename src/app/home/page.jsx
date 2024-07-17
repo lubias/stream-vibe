@@ -1,3 +1,4 @@
+import ScrollToTopButton from "@/components/Atoms/ScrollToTopButton/ScrollToTopButton";
 import Footer from "@/components/Molecule/Footer/Footer";
 import Header from "@/components/Molecule/Header/Header";
 import Hero from "@/components/Molecule/Hero/Hero";
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Content />
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }
