@@ -18,6 +18,7 @@ module.exports = {
         "black-08": "#141414",
         "black-10": "#1A1A1A",
         "black-12": "#1F1F1F",
+        "black-15": "#262626",
         "red-45": "#E50000",
       },
       borderColor: {
