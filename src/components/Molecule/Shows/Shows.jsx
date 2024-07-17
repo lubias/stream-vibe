@@ -1,6 +1,7 @@
 'use client'
 import CarouselCategories from '@/components/Atoms/CarouselCategories/CarouselCategories'
 import CarouselTrends from '@/components/Atoms/CarouselTrends/CarouselTrends'
+import Link from 'next/link'
 import React from 'react'
 
 function Shows() {
@@ -42,7 +43,7 @@ function Shows() {
 
     return (
         <div className='border border-black-15 rounded-lg p-12 md_3:px-5 relative'>
-            <div className='w-28 py-2 h-12 rounded-lg bg-red-45 flex items-center justify-center text-xl absolute -top-6'>Shows</div>
+            <Link href="/movies-shows/show-details" className='w-28 py-2 h-12 rounded-lg bg-red-45 flex items-center justify-center text-xl absolute -top-6'>Shows</Link>
             <div className='space-y-24'>
                 <CarouselCategories cards={our_genres} title="Our Genres" />
                 <CarouselCategories cards={top_genres} title="Popular Top 10 In Genres" type="2" />

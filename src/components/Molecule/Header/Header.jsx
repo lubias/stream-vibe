@@ -15,7 +15,7 @@ function Header({ page }) {
 
     return (
         <div className='h-32 flex justify-around items-center'>
-            <img src='/images/logo.svg' />
+            <Link href="/home"><img src='/images/logo.svg' /></Link>
             <div className='lg_4:hidden'>
                 <nav className='flex gap-6 items-center bg-black-06 border-4 rounded-md border-black-12 py-2 px-4'>
                     <Link href="/home" className={`${isActive('home') ? 'bg-black-12 py-3 px-6 rounded-md' : ''}`}>Home</Link>
