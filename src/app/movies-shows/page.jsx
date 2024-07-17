@@ -1,3 +1,4 @@
+import ScrollToTopButton from '@/components/Atoms/ScrollToTopButton/ScrollToTopButton'
 import Footer from '@/components/Molecule/Footer/Footer'
 import Header from '@/components/Molecule/Header/Header'
 import MoviesAndShowsHero from '@/components/Molecule/MoviesAndShowsHero/MoviesAndShowsHero'
@@ -11,6 +12,7 @@ function page() {
             <MoviesAndShowsHero />
             <MoviesAndShowsContent />
             <Footer />
+            <ScrollToTopButton />
         </div>
     )
 }

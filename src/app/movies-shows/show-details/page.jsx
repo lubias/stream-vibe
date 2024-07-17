@@ -1,4 +1,5 @@
 'use client'
+import ScrollToTopButton from '@/components/Atoms/ScrollToTopButton/ScrollToTopButton'
 import Footer from '@/components/Molecule/Footer/Footer'
 import Header from '@/components/Molecule/Header/Header'
 import ShowsDetailHero from '@/components/Molecule/ShowsDetailHero/ShowsDetailHero'
@@ -12,6 +13,7 @@ function page() {
             <ShowsDetailHero />
             <ShowDetailsContent />
             <Footer />
+            <ScrollToTopButton />
         </div>
     )
 }
