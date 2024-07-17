@@ -12,7 +12,7 @@ function Categories() {
     ];
 
     return (
-        <div className='pb-32'>
+        <div className='pb-14'>
             <CarouselCategories
                 cards={cards}
                 title="Explore our wide variety of categories"
