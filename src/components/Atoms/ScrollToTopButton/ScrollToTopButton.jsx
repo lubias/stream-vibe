@@ -36,7 +36,7 @@ const ScrollToTopButton = () => {
         <div className={`fixed bottom-5 sm_1:right-4 right-10 z-50 ${isVisible ? 'block' : 'hidden'}`}>
             <button
                 onClick={scrollToTop}
-                className="bg-black-06 border border-gray-60/30 rounded-full sm_1:px-5 px-4 py-4 flex flex-col justify-center items-center gap-2 transition duration-1000 delay-0 hover:shadow-skills"
+                className="bg-black-06 border border-gray-60/30 rounded-full px-4 py-4 flex flex-col justify-center items-center gap-2 transition duration-1000 delay-0 hover:shadow-skills"
             >
                 <FaArrowUp color="#F2F2F2" className="sm_1:w-3" />
             </button>
